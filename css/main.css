@@ -21,18 +21,22 @@
         .slidertext button{width:200px; height:50px; font-family:'Pretendard-Regular'; background:transparent; border:1px solid #e5e5e5; color:#e5e5e5; margin-top:50px; cursor:pointer; transition:0.3s;}
         .slidertext button:hover{background-color:#f183b2; color:#131313; border:0;} 
 
-        .section{width:100%; height:auto; background-color:black; display:flex; justify-content: center;}
+        .section{width:100%; height:auto; background-color:black; display:flex; justify-content: center; flex-flow:column; align-items: center;}
         
-        .one_section_text1{width:1200px; height:auto; margin-top:100px; display:flex; flex-flow:row wrap; justify-content: center;} 
-        .one_section_text1 > .minitext h1{height:30px; font-size:16px; font-weight: normal; color:#e5e5e5;}
+        .one_section_text1{width:1200px; height:1000px; margin-top:100px; display:flex; flex-flow:row wrap; justify-content: center;} 
+        .one_section_text1 > .minitext h1{height:30px; font-size:16px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5;}
         .one_section_text1 > .minitext .rotate{width:100px; font-size:15px; font-family:'Pretendard-Regular'; text-align:center; color:#e5e5e5; background-color:#f183b2; border-radius: 10px; border:0; padding:5px; margin-top:50px;}
        
         .one_section_text1 > .minitext .rotate{animation:rotate 1.5s ease-in-out infinite; transform-origin:50% 50%;}
         @keyframes rotate{100%{transform:rotateY(-360deg);}}
 
         .one_section_text1_change{width:1200px; height:500px; display:flex; margin-top:70px; position:relative;}
+        .one_section_text1_change img{width:480px; height:480px;}
         .changebox1{display:flex; float:left; position:absolute;}
-        .changebox2{display:flex; float:left; position:absolute; display:none;}
+        .changebox2{display:flex; float:left; position:absolute; opacity:0; transition:1s;}
+        .changebox3{display:flex; float:left; position:absolute; opacity:0; transition:1s;}
+        .changebox4{display:flex; float:left; position:absolute; opacity:0; transition:1s;}
+        .changebox5{display:flex; float:left; position:absolute; opacity:0; transition:1s;}
 
         .textbox1{width:720px; height:auto; text-align:center; margin-top:100px;}
         .textbox1 > h4{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:30px; }
@@ -45,9 +49,44 @@
         .two_section_text1_change img{width:200px; height:200px; margin:12px; transition:0.3s; cursor: pointer;}
         .two_section_text1_change img:hover{transform:translateY(-20px);}
 
-        .two_section_text1_change > .nv2{display:flex;}
+        .two_section_text1_change > .nv{display:flex;}
         .two_section_text1_change span{width:50px; height:50px; font-family:'Pretendard-Regular'; position:absolute; color:#e5e5e5; font-size:15px; display:block; text-align:center;
                                         transition:0.3s; cursor:pointer; line-height:48px; border:1px solid #131313;}
         .two_section_text1_change span:hover{color: #131313; background-color:#e5e5e5; text-align:center; line-height:48px;}
         .two_section_text1_change .prev{left:0;}
         .two_section_text1_change .next{right:0;}
+
+        .two_section_goods{width:100%; height:auto; display:flex; flex-flow:row wrap; justify-content: center;}
+        .two_section_goods > .minitext1{margin-top:100px; text-align: center;}
+        .two_section_goods > .minitext1 h1{height:30px; font-size:16px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; margin:0 auto; text-align: center;}
+        .two_section_goods > .minitext1 h2{height:80px; font-size:45px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; letter-spacing: 20px; margin-top:50px; }
+
+        .new_merch{width:100%; height:500px; margin-top:100px;}
+        .new_merch > .minitext2{width:100%; height:50px; display:flex; justify-content: space-around;}
+        .new_merch > .minitext2 h1{width:160px; height:30px; font-size:23px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
+        .new_merch > .minitext2 > .view_more h2{width:150px; height:30px; font-size:13px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
+                        text-align: center; line-height: 32px; cursor: pointer; transition:0.3s; background-color:#f183b2; border-radius: 10px; font-weight: normal;}
+        .new_merch > .minitext2 > .view_more h2:hover{background-color:#f183b2; border:0; color:#131313;}
+
+        .new_merch_product{width:100%; height:350px; display:flex; justify-content: space-evenly; margin-top:50px;}
+        .new_merch_product_one{width:300px; max-height:300px; min-height:300px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; justify-content: center; align-items: center; position:relative; background-repeat: no-repeat;}
+        .new_merch_product_one:hover{background:rgba(19, 19, 19, 0.5);}
+        .new_merch_product_one span{width:300px; height:300px; position:absolute; top:0; left:0; background:rgba(19, 19, 19, 0.5); color:#e5e5e5; font-size:20px; line-height:300px; display:none;}
+       
+        .acc{width:100%; height:500px; margin-top:50px;}
+        .acc > .minitext3{width:100%; height:50px; display:flex; justify-content: space-around;}
+        .acc > .minitext3 h1{width:160px; height:30px; font-size:23px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
+        .acc > .minitext3 > .view_more h2{width:150px; height:30px; font-size:13px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
+            text-align: center; line-height: 32px; cursor: pointer; transition:0.3s; background-color:#f183b2; border-radius: 10px; font-weight: normal;}
+        .acc > .minitext3 > .view_more h2:hover{background-color:#f183b2; border:0; color:#131313;}
+
+        .acc_product{width:100%; height:350px; display:flex; justify-content: space-evenly; margin-top:50px;}
+        .acc_product_one{width:300px; height:300px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; justify-content: center; align-items: center; position:relative; background-repeat: no-repeat;   }
+        .acc_product_one:hover{background:rgba(19, 19, 19, 0.5);}
+        .acc_product_one span{width:300px; height:300px; position:absolute; top:0; left:0; background:rgba(19, 19, 19, 0.5); color:#e5e5e5; font-size:20px; line-height:300px; display:none;}
+
+        .two_section_goods > .minitext4{width:100%; height:30px; text-align: center;}
+        .two_section_goods > .minitext4 h1{width:100px; font-family:'Pretendard-Regular'; color:#e5e5e5; background-color:#f183b2; padding:5px; font-size:16px; font-weight: normal; border-radius: 10px; margin:0 auto;}
+        
+        .two_section_goods > .minitext4{animation:rotatethree 1.5s ease-in-out infinite; transform-origin:50% 50%;}
+        @keyframes rotatethree{100%{transform:rotateY(-360deg);}}
