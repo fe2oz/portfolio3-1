@@ -55,10 +55,7 @@
             $('.changebox4').css("opacity", "0");
             $('.changebox5').css("opacity", "0");
         })
+
+
+
     });
-
-    
-
-
-
-    
