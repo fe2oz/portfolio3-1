@@ -135,7 +135,8 @@
 
         .musicvideo_box{width:850px; height:650px; position:relative;}
         .imgbox{width:850px; height:650px;}
-        .musicvideo_box img{width:100%; height:100%;}
+        .musicvideo_box img{width:100%; height:100%;  position:absolute; top:0; left:0; float:left;}
+        .cho2{display:none;}
 
         .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:45%;}
         .imgbox_cho li{color:#131313; display:inline-block; font-size:38px; cursor:pointer;}
