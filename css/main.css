@@ -49,11 +49,16 @@
         .textbox1-1 > h5{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal;}
         .textbox1-1 > h6{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal;}
 
-        .two_section_text1_change{width:1200px; height:300px; display:flex; justify-content: center; align-items: center; position:relative;}
+        .two_section_text1_change{width:100%; height:300px; display:flex; justify-content: center; align-items: center; position:relative;}
         .two_section_text1_change img{width:200px; height:200px; margin:12px; transition:0.3s; cursor: pointer;}
         .two_section_text1_change img:hover{transform:translateY(-20px);}
 
-        .two_section_text1_change > .nv{display:flex; overflow:hidden;}
+        .two_section_text1_change > .nv{width:100%; display:flex; overflow:hidden;}
+        .two_section_text1_change > .nv li{transform:translateX(100%);animation:test 5s linear infinite;}
+        @keyframes test {
+            0%{transform: translateX(100%);}
+            100%{transform: translateX(-100%)};}
+
         .two_section_text1_change span{width:50px; height:50px; font-family:'Pretendard-Regular'; position:absolute; color:#e5e5e5; font-size:15px; display:block; text-align:center;
                                         transition:0.3s; cursor:pointer; line-height:48px; border:1px solid #131313;}
         .two_section_text1_change span:hover{color: #131313; background-color:#e5e5e5; text-align:center; line-height:48px;}
