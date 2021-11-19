@@ -50,8 +50,8 @@
         .two_section_text1_change img{width:200px; height:200px; margin:12px; transition:0.3s; cursor: pointer;}
         .two_section_text1_change img:hover{transform:translateY(-20px);}
 
-        .two_section_text1_change > .nv{width:100%; display:flex; overflow:hidden; position:relative;}
-        .two_section_text1_change > .nv li{transform: translateX(100%); animation:test 15s linear infinite;}
+        .two_section_text1_change > .nv{width:100%; display:flex; overflow:hidden; position:relative; white-space:nowrap;}
+        .two_section_text1_change > .nv li{width:100%; transform: translateX(100%); animation:test 15s linear infinite; } 
         @keyframes test {
             from{transform: translateX(500%);}
             99%, to{transform: translateX(-500%);}
@@ -61,8 +61,8 @@
         .two_section_text1_change span{width:50px; height:50px; font-family:'Pretendard-Regular'; position:absolute; color:#e5e5e5; font-size:15px; display:block; text-align:center;
                                         transition:0.3s; cursor:pointer; line-height:48px; border:1px solid #131313;}
         .two_section_text1_change span:hover{color: #131313; background-color:#e5e5e5; text-align:center; line-height:48px;}
-        .two_section_text1_change .prev{left:0;}
-        .two_section_text1_change .next{right:0;}
+        .two_section_text1_change .prev{left:0; display:none;}
+        .two_section_text1_change .next{right:0; display:none;}
 
         .two_section_goods{width:100%; height:auto; display:flex; flex-flow:row wrap; justify-content: center; border-top:1px solid #f183b2;}
         .two_section_goods > .minitext1{margin-top:100px; text-align: center;}
