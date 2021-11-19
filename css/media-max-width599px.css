@@ -112,7 +112,7 @@ body{background-color:black;}
     .musicvideo_box img{width:100%; height:100%;  position:absolute; top:0; left:0; float:left;}
     .cho2, .cho3, .cho4, .cho5, .cho6{display:none;}
     
-    .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:45%;}
+    .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:38%;}
     .imgbox_cho li{color:#131313; display:inline-block; font-size:38px; cursor:pointer;}
     .imgbox_cho li.active{color:#f183b2;}
     
