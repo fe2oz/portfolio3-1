@@ -18,7 +18,7 @@ body{background-color:black;}
         .menu img{width:20px; height:20px; margin-top:5px; padding:10px; filter: invert(1);}
         .menu img:hover{filter: opacity(0.5) drop-shadow(0 0 0 pink) brightness(2);}
 
-        #slider{width:100%; height:300px; background-repeat: no-repeat; background-size:100%; text-align: center; position:relative;}
+        #slider{width:100%; height:200px; background-repeat: no-repeat; background-size:100%; text-align: center; position:relative;}
         .slidertext{width:100%; height:auto; margin:0; position:absolute; color:#e5e5e5; text-align:center; top:33%; left:0;}
         .slidertext h1{font-family:'Pretendard-Regular'; letter-spacing: 25px;  font-size:13px; cursor:default;}
         .slidertext h2{font-family:'Pretendard-Regular'; letter-spacing: 13px; font-size:20px; 
@@ -62,7 +62,7 @@ body{background-color:black;}
         .changebox2, .changebox3, .changebox4, .changebox5, .changebox6, .changebox7, .changebox8, .changebox9, .changebox10{display:block; float:left; position:absolute; opacity:0; transition:1s; text-align: center;}
 
         .textbox1{width:100%; height:500px; text-align:center;  display:flex; flex-flow: column wrap; align-items: center; }
-        .textbox1-1{width:100%; height:auto; margin-top:50px; display:flex; justify-content: center; text-align:left;}
+        .textbox1-1{width:100%; height:auto; margin-top:50px; display:flex; justify-content: space-evenly; text-align:left;}
         .textbox1 > h4{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:25px; margin-top:30px;}
         .textbox1 > h3{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:16px; font-weight: normal; margin-top:55px;}
         .textbox1-1 > h5{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal;}
@@ -105,12 +105,14 @@ body{background-color:black;}
     .tour_box_dates button a{color:#e5e5e5; text-decoration: none; }
     .tour_box_dates button:hover{background:transparent;}
     
+
+    /* 사진 모음 */
     .musicvideo_box{width:100%; height:500px; position:relative; margin-top:50px;}
     .imgbox{width:100%; height:650px;}
     .musicvideo_box img{width:100%; height:100%;  position:absolute; top:0; left:0; float:left;}
     .cho2, .cho3, .cho4, .cho5, .cho6{display:none;}
     
-    .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:45%;}
+    .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:33%;}
     .imgbox_cho li{color:#131313; display:inline-block; font-size:38px; cursor:pointer;}
     .imgbox_cho li.active{color:#f183b2;}
     
@@ -131,30 +133,29 @@ body{background-color:black;}
     .two_section_goods > .minitext1 h1{height:30px; font-size:16px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; margin:0 auto; text-align: center;}
     .two_section_goods > .minitext1 h2{height:80px; font-size:30px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; letter-spacing: 20px; margin-top:50px; }
     
-    .new_merch{width:100%; height:800px; margin-top:100px;}
+    .new_merch{width:100%; height:700px; margin-top:100px;}
     .new_merch > .minitext2{width:100%; height:50px; display:flex; justify-content: space-around;}
-    .new_merch > .minitext2 h1{width:160px; height:30px; font-size:23px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
-    .new_merch > .minitext2 > .view_more h2{width:150px; height:30px; font-size:13px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
+    .new_merch > .minitext2 h1{width:160px; height:30px; font-size:16px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
+    .new_merch > .minitext2 > .view_more h2{width:130px; height:30px; font-size:11px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
                     text-align: center; line-height: 32px; cursor: pointer; transition:0.3s; background-color:#f183b2; border-radius: 10px; font-weight: normal;}
     .new_merch > .minitext2 > .view_more h2:hover{background-color:#f183b2; border:0; color:#131313;}
     
     .new_merch_product{width:100%; height:auto; display:flex; justify-content: space-evenly; margin-top:20px; flex-flow:row wrap;}
-    .new_merch_product_one{width:200px; height:200px; background-position: center; background-size:cover; transition:0.7s; cursor:pointer; text-align:center; display:flex; align-items: center; position:relative; background-repeat: no-repeat;
+    .new_merch_product_one{width:150px; height:150px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; align-items: center; position:relative; background-repeat: no-repeat;
     margin:10px;}
-    .new_merch_product_one:hover{background:rgba(19, 19, 19, 1);}
-    .new_merch_product_one span{width:200px; height:200px; position:absolute; top:0; left:0; background:rgba(19, 19, 19, 0.5); color:#e5e5e5; font-size:20px; line-height:200px; display:none;}
+    .new_merch_product_one span{width:150px; height:150px; position:absolute; top:0; left:0;  color:#e5e5e5; font-size:11x; line-height:150px; display:none; background:rgba(19, 19, 19, 0.5);}
     
-    .acc{width:100%; height:450px;}
+    .acc{width:100%; height:310px;}
     .acc > .minitext3{width:100%; height:50px; display:flex; justify-content: space-around;}
-    .acc > .minitext3 h1{width:160px; height:30px; font-size:23px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
-    .acc > .minitext3 > .view_more h2{width:150px; height:30px; font-size:13px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
+    .acc > .minitext3 h1{width:160px; height:30px; font-size:16px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
+    .acc > .minitext3 > .view_more h2{width:130px; height:30px; font-size:11px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
         text-align: center; line-height: 32px; cursor: pointer; transition:0.3s; background-color:#f183b2; border-radius: 10px; font-weight: normal;}
     .acc > .minitext3 > .view_more h2:hover{background-color:#f183b2; border:0; color:#131313;}
     
-    .acc_product{width:100%; height:auto; display:flex; justify-content: space-evenly; margin-top:20px; flex-flow:row wrap;}
-    .acc_product_one{width:200px; height:200px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; justify-content: center; align-items: center; position:relative; background-repeat: no-repeat; 
+    .acc_product{width:100%; height:auto; display:flex; justify-content: space-evenly; flex-flow:row wrap;}
+    .acc_product_one{width:150px; height:150px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; justify-content: center; align-items: center; position:relative; background-repeat: no-repeat; 
     margin:10px;}
-    .acc_product_one span{width:300px; height:300px; position:absolute; top:0; left:0;  color:#e5e5e5; font-size:20px; line-height:300px; display:none;}
+    .acc_product_one span{width:150px; height:150px; position:absolute; top:0; left:0;  color:#e5e5e5; font-size:20px; line-height:150px; display:none; background:rgba(19, 19, 19, 0.5);}
     
     .acc > .minitext4{width:100px; height:30px; text-align: center; margin:0 auto;}
     .acc > .minitext4 h1{width:100px; font-family:'Pretendard-Regular'; background-color:#f183b2; padding:5px; font-size:16px; font-weight: normal; border-radius: 10px; margin:0 auto; text-decoration: none;}
