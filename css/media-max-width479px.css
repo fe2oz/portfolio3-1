@@ -1,24 +1,24 @@
-body{background-color:black;}
+body{background-color:black; height:auto;}
 
     @media (max-width:480px){
         header{width:100%; height:auto; display:flex; justify-content: space-between; top:0; position:absolute; z-index:3;}
         .nv1{color:#e5e5e5; display:none;}
         .nv1 ul{display:flex; flex-flow:column wrap;}
         .nv1 ul li{height:30px;}
-        .nv1 ul li a{color:#e5e5e5; font-family:'Pretendard-Regular'; text-decoration: none; font-size:18px; padding:15px;
+        .nv1 ul li a{color:#e5e5e5; font-family:'Pretendard-Regular'; text-decoration: none; font-size:13px; padding:15px;
             cursor:pointer; display:block;}
         .nv1 ul li a:after{display:block; content:''; border-bottom:2px solid #f183b2; transform:scaleX(0); transition:transform 250ms ease-in-out;}
         .nv1 ul li a:hover:after{ transform: scaleX(1); transform-origin: 0% 50%;}
 
         .logo{display:inline-block; margin-top:5px;}
-        .logo img{filter: invert(1); width:20px; height:20px; padding:10px; cursor:pointer;}
+        .logo img{filter: invert(1); width:20px; height:20px; padding:5px; cursor:pointer;}
         .logo img:hover{filter: opacity(0.5) drop-shadow(0 0 0 pink) brightness(2); }
 
         .menu{cursor:pointer;}
-        .menu img{width:20px; height:20px; margin-top:5px; padding:10px; filter: invert(1);}
+        .menu img{width:20px; height:20px; margin-top:5px; padding:5px; filter: invert(1);}
         .menu img:hover{filter: opacity(0.5) drop-shadow(0 0 0 pink) brightness(2);}
 
-        #slider{width:100%; height:200px; background-repeat: no-repeat; background-size:100%; text-align: center; position:relative;}
+        #slider{width:100%; height:500px; background-repeat: no-repeat; background-size:100% 100%; text-align: center; position:relative;}
         .slidertext{width:100%; height:auto; margin:0; position:absolute; color:#e5e5e5; text-align:center; top:33%; left:0;}
         .slidertext h1{font-family:'Pretendard-Regular'; letter-spacing: 25px;  font-size:13px; cursor:default;}
         .slidertext h2{font-family:'Pretendard-Regular'; letter-spacing: 13px; font-size:20px; 
@@ -112,7 +112,7 @@ body{background-color:black;}
     .musicvideo_box img{width:100%; height:100%;  position:absolute; top:0; left:0; float:left;}
     .cho2, .cho3, .cho4, .cho5, .cho6{display:none;}
     
-    .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:33%;}
+    .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:35%;}
     .imgbox_cho li{color:#131313; display:inline-block; font-size:38px; cursor:pointer;}
     .imgbox_cho li.active{color:#f183b2;}
     
@@ -129,11 +129,11 @@ body{background-color:black;}
     
     /* 굿즈 부분 */
     .two_section_goods{background-color:black; height:auto;}
-    .two_section_goods > .minitext1{margin-top:100px; text-align: center;}
+    .two_section_goods > .minitext1{width:389px; margin-top:100px; text-align: center;}
     .two_section_goods > .minitext1 h1{height:30px; font-size:16px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; margin:0 auto; text-align: center;}
     .two_section_goods > .minitext1 h2{height:80px; font-size:30px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; letter-spacing: 20px; margin-top:50px; }
     
-    .new_merch{width:100%; height:700px; margin-top:100px;}
+    .new_merch{width:100%; height:650px; margin-top:100px; text-align: center;}
     .new_merch > .minitext2{width:100%; height:50px; display:flex; justify-content: space-around;}
     .new_merch > .minitext2 h1{width:160px; height:30px; font-size:16px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
     .new_merch > .minitext2 > .view_more h2{width:130px; height:30px; font-size:11px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
@@ -145,7 +145,7 @@ body{background-color:black;}
     margin:10px;}
     .new_merch_product_one span{width:150px; height:150px; position:absolute; top:0; left:0;  color:#e5e5e5; font-size:11x; line-height:150px; display:none; background:rgba(19, 19, 19, 0.5);}
     
-    .acc{width:100%; height:310px;}
+    .acc{width:100%; height:700px;}
     .acc > .minitext3{width:100%; height:50px; display:flex; justify-content: space-around;}
     .acc > .minitext3 h1{width:160px; height:30px; font-size:16px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
     .acc > .minitext3 > .view_more h2{width:130px; height:30px; font-size:11px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
@@ -167,7 +167,7 @@ body{background-color:black;}
     
     
     /* subscribe 부분 */
-    .five_section{width:100%; height:450px; display:flex; justify-content: center; align-items: center; text-align: center; border-top:1px solid #f183b2; margin-top:400px;}
+    .five_section{width:100%; height:450px; display:flex; justify-content: center; align-items: center; text-align: center; border-top:1px solid #f183b2;}
     .subscribe{position:absolute;}
     .subscribe h1{font-family:'Pretendard-Regular'; color:#e5e5e5; text-transform: uppercase; padding:5px; font-size:30px;}
     .subscribe h2{font-family:'Pretendard-Regular'; color:#e5e5e5; font-weight: normal; font-size:17px; text-transform: uppercase; letter-spacing: 5px; padding:5px;}
@@ -180,7 +180,7 @@ body{background-color:black;}
     #sub{transition:0.2s; cursor:pointer; }
     #sub:hover{box-shadow: 3px 3px darkred;}
     
-    .video{width:430px;}
+    .video{width:95%; margin:0;}
 
     /* 체크 박스 변경,  폰트어썸 cdn*/
     .check{margin-top:10px; display:flex; justify-content: center;}
