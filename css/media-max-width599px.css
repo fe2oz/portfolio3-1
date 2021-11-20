@@ -71,14 +71,18 @@ body{background-color:black;}
         .textbox1-1 > h6{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal;}
         
         /* 앨범 이미지 변경 부분 */
-    .two_section_text1_change{width:100%; height:700px; justify-content: center; align-items: center; position:relative;}
-    .two_section_text1_change img{width:130px; height:130px; margin:12px; transition:0.3s; cursor: pointer;}
+    .two_section_text1_change{width:100%; height:150px; position:relative; }
+    .two_section_text1_change img{width:130px; height:130px; margin:12px; transition:0.3s; cursor: pointer; }
     .two_section_text1_change img:hover{transform:translateY(-20px);}
     
-    .two_section_text1_change > .nv{width:100%; height:500px; position:relative; white-space:nowrap; display:flex; flex-flow:row wrap; justify-content: center;}
+    .two_section_text1_change > .nv{height:130px; overflow:hidden; position:absolute; left:8%;}
     .two_section_text1_change > .nv li{float:left;}
    
-    
+    .two_section_text1_change span{width:50px; height:50px; font-family:'Pretendard-Regular'; position:absolute; color:#e5e5e5; font-size:15px; display:block; text-align:center;
+        transition:0.3s; cursor:pointer; line-height:48px; border:1px solid #131313; top:30%;}
+.two_section_text1_change span:hover{color: #131313; background-color:#e5e5e5; text-align:center; line-height:48px;}
+.two_section_text1_change .prev{left:0; }
+.two_section_text1_change .next{right:0; }
    
 
     /* 공연 일정 및 사진 변경 */

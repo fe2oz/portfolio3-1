@@ -83,3 +83,18 @@
         })
 
     });
+
+    $(function(){
+        $('.prev').click(function(){
+            $('.nv li:last').prependTo('.nv');
+            $('.nv').css('margin-left', -0);
+            $('.nv').stop().alimate({marginLeft:0}, 500);
+        })
+
+        $('.next').click(function(){
+            $('.nv').stop().animate({marginLeft:-130}, 500, function(){
+                $('.nv li:first').appendTo('.nv');
+                $('.nv').css({marginLeft:0});
+            })
+        })
+    });
