@@ -1,0 +1,8 @@
+
+
+
+
+    #slider{width:100%; height:800px; display:flex;}
+
+    .tour_text_box{width:50%; height:800px; background-color:#f183b2;}
+    .tour_image_box{width:50%; height:800px; background-size:cover;}
