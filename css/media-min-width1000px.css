@@ -51,23 +51,23 @@
     
     
     /* 앨범 이미지, 정보 */
-    .one_section_text1{width:1100px; height:1000px; margin-top:100px; display:flex; flex-flow:row wrap; justify-content: center;} 
+    .one_section_text1{width:1200px; height:1000px; margin-top:100px; display:flex; flex-flow:row wrap; justify-content: center;} 
     .one_section_text1 > .minitext h1{height:30px; font-size:16px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5;}
     .one_section_text1 > .minitext .rotate{width:100px; font-size:15px; font-family:'Pretendard-Regular'; text-align:center; color:#e5e5e5; background-color:#f183b2; border-radius: 10px; border:0; padding:5px; margin-top:50px;}
     
     .one_section_text1 > .minitext .rotate{animation:rotate 1.5s ease-in-out infinite; transform-origin:50% 50%;}
     @keyframes rotate{100%{transform:rotateY(-360deg);}}
     
-    .one_section_text1_change{width:1200px; height:500px; display:flex; margin-top:70px; position:relative;}
+    .one_section_text1_change{width:1200px; height:480px; display:flex; margin-top:70px; position:relative;}
     .one_section_text1_change img{width:480px; height:480px;}
     .changebox1{display:flex; float:left; position:absolute;}
     .changebox2, .changebox3, .changebox4, .changebox5, .changebox6, .changebox7, .changebox8, .changebox9, .changebox10{display:flex; float:left; position:absolute; opacity:0; transition:1s;}
     
-    .textbox1{width:650px; height:auto; text-align:center; margin-top:80px; display:flex; flex-flow:column wrap; align-items: center;}
-    .textbox1-1{width:520px; height:220px; margin-top:80px; display:flex; flex-flow:column wrap; text-align:left;}
-    .textbox1 > h4{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:30px; }
-    .textbox1 > h3{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:16px; font-weight: normal; margin-top:35px;}
-    .textbox1-1 > h5{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal;}
+    .textbox1{width:650px; height:auto; text-align:center; display:flex; flex-flow:column wrap; align-items: center;}
+    .textbox1-1{width:520px; height:220px; margin-top:80px; text-align:left;}
+    .textbox1 > h4{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:30px; margin-top:50px; }
+    .textbox1 > h3{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:16px; font-weight: normal; margin-top:45px;}
+    .textbox1-1 > h5{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal; }
     .textbox1-1 > h6{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:14px; font-weight: normal;}
     
     
@@ -76,7 +76,7 @@
     .two_section_text1_change img{width:200px; height:200px; margin:12px; transition:0.3s; cursor: pointer;}
     .two_section_text1_change img:hover{transform:translateY(-20px);}
     
-    .two_section_text1_change > .nv{width:100%; display:flex; overflow:hidden; position:relative; white-space:nowrap;}
+    .two_section_text1_change > .nv{width:100%; height:200px; display:flex; overflow:hidden; position:relative; white-space:nowrap;}
     .two_section_text1_change > .nv li{width:100%; transform: translateX(100%); animation:test 18s linear infinite; } 
     @keyframes test {
         from{transform: translateX(500%);}
@@ -102,7 +102,7 @@
     
     /* 공연 일정 및 사진 변경 */
     
-    .four_section{width:100%; height:800px; display:flex; align-items: center; justify-content: space-evenly; border-top:1px solid #f183b2; align-items: center;}
+    .four_section{width:100%; height:auto; display:flex; align-items: center; justify-content: space-evenly; align-items: center;}
     .tour_box{width:350px; height:650px; text-align:center;}
     .tour_box h1{font-family:'Pretendard-Regular'; color:#e5e5e5; font-size:16px; font-weight:normal;}
     .tour_box h2{text-transform: uppercase; font-size:23px; color:#e5e5e5; font-weight:normal; letter-spacing: 5px;}
@@ -116,9 +116,9 @@
     .tour_box_dates button a{color:#e5e5e5; text-decoration: none; }
     .tour_box_dates button:hover{background:transparent;}
     
-    .musicvideo_box{width:850px; height:650px; position:relative;}
+    .musicvideo_box{width:850px; height:auto; position:relative;}
     .imgbox{width:850px; height:650px;}
-    .musicvideo_box img{width:100%; height:100%;  position:absolute; top:0; left:0; float:left;}
+    .musicvideo_box img{width:850px; height:100%;  position:absolute; top:0; left:0; float:left;}
     .cho2, .cho3, .cho4, .cho5, .cho6{display:none;}
     
     .imgbox_cho{z-index:5; position:absolute; bottom:10px; left:45%;}
@@ -132,10 +132,10 @@
     
     .music_box{width:1200px; height:300px; display:flex; flex-flow:column wrap;}
     .music_box img{width:350px; height:300px;}
-    .music_box h1{width:750px; font-family:'Pretendard-Regular'; font-size:16px; color:#e5e5e5; font-weight:normal; margin-left:30px; margin-top:10px;}
-    .music_box h2{width:750px; font-family:'Pretendard-Regular'; font-size:18px; color:#e5e5e5; letter-spacing: 15px; line-height: 50px; margin-left:30px;}
-    .music_box h3{width:750px; font-family:'Pretendard-Regular'; font-size:16px; color:#e5e5e5; font-weight:normal; margin-left:30px;}
-    .music_box audio{width:750px; background:transparent; margin-left:30px; margin-top:50px;}
+    .music_box h1{width:65%; font-family:'Pretendard-Regular'; font-size:16px; color:#e5e5e5; font-weight:normal; margin-left:30px; margin-top:10px;}
+    .music_box h2{width:65%; font-family:'Pretendard-Regular'; font-size:18px; color:#e5e5e5; letter-spacing: 15px; line-height: 50px; margin-left:30px;}
+    .music_box h3{width:65%; font-family:'Pretendard-Regular'; font-size:16px; color:#e5e5e5; font-weight:normal; margin-left:30px;}
+    .music_box audio{width:65%; background:transparent; margin-left:30px; margin-top:50px;}
     
     /* 굿즈 부분 */
     .two_section_goods{background-color:black;} 
@@ -143,41 +143,41 @@
     .two_section_goods > .minitext1 h1{height:30px; font-size:16px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; margin:0 auto; text-align: center;}
     .two_section_goods > .minitext1 h2{height:80px; font-size:45px; font-family:'Pretendard-Regular'; font-weight: normal; color:#e5e5e5; letter-spacing: 20px; margin-top:50px; }
     
-    .new_merch{width:100%; height:450px; margin-top:100px;}
+    .new_merch{width:100%; height:auto; margin-top:100px;}
     .new_merch > .minitext2{width:100%; height:50px; display:flex; justify-content: space-around;}
     .new_merch > .minitext2 h1{width:160px; height:30px; font-size:23px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
     .new_merch > .minitext2 > .view_more h2{width:150px; height:30px; font-size:13px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
                     text-align: center; line-height: 32px; cursor: pointer; transition:0.3s; background-color:#f183b2; border-radius: 10px; font-weight: normal;}
     .new_merch > .minitext2 > .view_more h2:hover{background-color:#f183b2; border:0; color:#131313;}
     
-    .new_merch_product{width:100%; height:350px; display:flex; justify-content: space-evenly; margin-top:20px;}
+    .new_merch_product{width:100%; height:auto; display:flex; justify-content: space-evenly; margin-top:20px;}
     .new_merch_product_one{width:300px; max-height:300px; min-height:300px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; justify-content: center; align-items: center; position:relative; background-repeat: no-repeat;}
     .new_merch_product_one:hover{background:rgba(19, 19, 19, 0.5);}
     .new_merch_product_one span{width:300px; height:300px; position:absolute; top:0; left:0; background:rgba(19, 19, 19, 0.5); color:#e5e5e5; font-size:20px; line-height:300px; display:none;}
     
-    .acc{width:100%; height:490px; border-bottom:1px solid;}
+    .acc{width:100%; height:auto; margin-top:50px;}
     .acc > .minitext3{width:100%; height:50px; display:flex; justify-content: space-around;}
     .acc > .minitext3 h1{width:160px; height:30px; font-size:23px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0;}
     .acc > .minitext3 > .view_more h2{width:150px; height:30px; font-size:13px; font-family:'Pretendard-Regular'; color:#e5e5e5; margin:0 auto; letter-spacing: 3px;
         text-align: center; line-height: 32px; cursor: pointer; transition:0.3s; background-color:#f183b2; border-radius: 10px; font-weight: normal;}
     .acc > .minitext3 > .view_more h2:hover{background-color:#f183b2; border:0; color:#131313;}
     
-    .acc_product{width:100%; height:350px; display:flex; justify-content: space-evenly; margin-top:20px;}
+    .acc_product{width:100%; height:auto; display:flex; justify-content: space-evenly; margin-top:20px;}
     .acc_product_one{width:300px; height:300px; background-position: center; background-size:cover; transition:0.3s; cursor:pointer; text-align:center; display:flex; justify-content: center; align-items: center; position:relative; background-repeat: no-repeat;   }
     .acc_product_one:hover{background:rgba(19, 19, 19, 0.5);}
     .acc_product_one span{width:300px; height:300px; position:absolute; top:0; left:0; background:rgba(19, 19, 19, 0.5); color:#e5e5e5; font-size:20px; line-height:300px; display:none;}
     
-    .acc > .minitext4{width:100px; height:30px; text-align: center; margin:0 auto;}
+    .acc > .minitext4{width:100px; height:30px; text-align: center; margin:0 auto; margin-top:50px;}
     .acc > .minitext4 h1{width:100px; font-family:'Pretendard-Regular'; background-color:#f183b2; padding:5px; font-size:16px; font-weight: normal; border-radius: 10px; margin:0 auto; text-decoration: none;}
     .acc > .minitext4 a{text-decoration: none;  color:#e5e5e5;}
     
     .acc > .minitext4{animation:rotatethree 1.5s ease-in-out infinite; transform-origin:50% 50%;}
     @keyframes rotatethree{100%{transform:rotateY(-360deg);}}
     
-    .video{width:1000px;}
+    .video{width:auto;}
     
     /* subscribe 부분 */
-    .five_section{width:100%; max-height:1100px; min-height:800px; display:flex; justify-content: center; align-items: center; text-align: center; border-top:1px solid #f183b2;}
+    .five_section{width:100%; height:auto; display:flex; justify-content: center; align-items: center; text-align: center;}
     .subscribe{position:absolute;}
     .subscribe h1{font-family:'Pretendard-Regular'; color:#e5e5e5; text-transform: uppercase; padding:5px; font-size:45px;}
     .subscribe h2{font-family:'Pretendard-Regular'; color:#e5e5e5; font-weight: normal; font-size:17px; text-transform: uppercase; letter-spacing: 5px; padding:5px;}
@@ -190,7 +190,7 @@
     #sub{transition:0.2s; cursor:pointer; }
     #sub:hover{box-shadow: 3px 3px darkred;}
     
-    .video{width:100%;}
+    .video{width:100%; border-top:1px solid #f183b2;}
     
     /* 체크 박스 변경,  폰트어썸 cdn*/
     .check{margin-top:10px; display:flex; justify-content: center;}
@@ -202,8 +202,9 @@
     .check h4{font-weight:normal; color:#e5e5e5; text-transform: uppercase; margin-left:5px;}
     
     
-    footer{width:100%; height:100px; border-top:1px solid #f183b2; background-color:black; display:flex; flex-flow:column wrap; align-items: center; justify-content: center; margin-top:50px;}
-    .nv2 ul{display:flex;}
+    footer{width:100%; height:auto; border-top:1px solid #f183b2; background-color:black; display:flex; align-items: center; justify-content: center; flex-flow:column; }
+    
+    .nv2 ul{display:flex; flex-flow:row;}
     .nv2 ul li a{text-decoration: none; color:#e5e5e5; font-family:'Pretendard-Regular'; padding:10px; font-weight:normal; text-transform: uppercase; font-size:13px;}
     .nv2 ul li a:hover{text-decoration: underline;}
     

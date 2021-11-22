@@ -13,13 +13,4 @@ $(window).resize(function(){
 
 })
 
-$(function(){
-    $('.menu').mouseover(function(){
-        $('.nv1').fadeIn();
-    })
-
-    $('.menu').mouseleave(function(){
-        $('.nv1').fadeOut();
-    })
-});
 
