@@ -7,10 +7,11 @@ $(function(){
 });
 
 $(window).resize(function(){
-    if(window.innerWidth>=480){
+    if(window.innerWidth>=1000){
         $('.nv1').show();
     }
-
 })
+
+
 
 
