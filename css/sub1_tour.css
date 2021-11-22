@@ -1,6 +1,7 @@
 
 
-
+.nv1 ul li a:after{display:block; content:''; border-bottom:2px solid #e5e5e5; transform:scaleX(0); transition:transform 250ms ease-in-out;}
+.nv1 ul li a:hover:after{ transform: scaleX(1); transform-origin: 0% 50%;}
 
     #slider{width:100%; height:800px; display:flex;}
 
