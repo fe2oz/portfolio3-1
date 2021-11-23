@@ -46,14 +46,18 @@
     .news h1{color:#e5e5e5; width:300px; height:100px; text-align:center; margin:0 auto; line-height:100px;}
     .newsbox{width:1200px; height:auto; display:flex; flex-flow:row wrap;}
     .photo1, .photo2, .photo3, .photo4, .photo5, .photo6{width:400px; height:400px; background-size:cover; background-position: center; }
-    .newstext1, .newstext2, .newstext4, .newstext6{width:400px; height:400px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; opacity:0; display:flex; align-items: center; justify-content:center; transition:0.5s;}
+    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6{width:400px; height:400px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; opacity:0; display:flex; align-items: center; justify-content:center; transition:0.5s;}
     .newstext1 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext2 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext3 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext4 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext5 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext6 img{width:25px; height:25px; filter: invert(0.8);}
 
     .newstext1:hover{background:rgba(19,19,19, 0.7)}
     .newstext2:hover{background:rgba(19,19,19, 0.7)}
+    .newstext3:hover{background:rgba(19,19,19, 0.7)}
     .newstext4:hover{background:rgba(19,19,19, 0.7)}
+    .newstext5:hover{background:rgba(19,19,19, 0.7)}
     .newstext6:hover{background:rgba(19,19,19, 0.7)}
     
