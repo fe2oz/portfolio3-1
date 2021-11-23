@@ -48,4 +48,28 @@ $(function(){
     $('.photo6').mouseleave(function(){
         $('.newstext6').css("opacity", "0");
     });
+
+    $('.photo7').mouseover(function(){
+        $('.newstext7').css("opacity", "1");
+    });
+
+    $('.photo7').mouseleave(function(){
+        $('.newstext7').css("opacity", "0");
+    });
+
+    $('.photo8').mouseover(function(){
+        $('.newstext8').css("opacity", "1");
+    });
+
+    $('.photo8').mouseleave(function(){
+        $('.newstext8').css("opacity", "0");
+    });
+
+    $('.photo9').mouseover(function(){
+        $('.newstext9').css("opacity", "1");
+    });
+
+    $('.photo9').mouseleave(function(){
+        $('.newstext9').css("opacity", "0");
+    });
 });

@@ -1,17 +1,37 @@
 
 
-.nv1 ul li a:after{display:block; content:''; border-bottom:2px solid #e5e5e5; transform:scaleX(0); transition:transform 250ms ease-in-out;}
-.nv1 ul li a:hover:after{ transform: scaleX(1); transform-origin: 0% 50%;}
+    .nv1 ul li a:after{display:block; content:''; border-bottom:2px solid #f183b2; transform:scaleX(0); transition:transform 250ms ease-in-out;}
+    .nv1 ul li a:hover:after{ transform: scaleX(1); transform-origin: 0% 50%;}
 
     #slider{width:100%; height:800px; display:flex;}
 
-    .tour_text_box{width:50%; height:800px; background-color:#f183b2;}
-    .tour_image_box{width:50%; height:800px; background-size:cover; background-position: right;}
+    .tour_image_box{width:100%; height:100vh; display:flex; box-sizing: border-box;  padding:4% 2%;  position:relative;}
+    .tour1{flex:1; overflow: hidden; transition:0.5s; margin:0 2%;}
+    .tour1 > img{width:200%;  height: calc(100% - 10vh);  object-fit: cover; opacity:0.5;}
+    .tour1:hover { flex: 1 1 25%; }
+    .tour1:hover > img {width: 100%; height: 90%; opacity:1;}
 
+    .tour_text_box{position:absolute; color:#e5e5e5; top:28%; left:2%;}
+    .tour_text_box h1{text-transform: uppercase; font-size:9.4vw; color:#e5e5e5; animation:text 1s infinite;}
 
-    .section{width:100%; height:auto;}
-    .up{width:500px; height:100px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 95px; margin-top:20px; text-align: center;}
-    
+    @keyframes text{
+        0%{text-shadow: 10px 0 0 #f183b2;}
+        10%{text-shadow: -10px -10px 0 darkred;}
+        20%{text-shadow: 10px 0 0 #ABD16A;}
+        30%{text-shadow: 10px 0 0 #F7D37D;}
+        40%{text-shadow: 10px 10px 0 #B3274F;}
+        50%{text-shadow: -15px -10px 0 #C9C81E;}
+        60%{text-shadow: 0 10px 0 #f183b2;}
+        70%{text-shadow: 10px 0 0 darkred;}
+        80%{text-shadow: -10px -15px 0 #ABD16A;}
+        90%{text-shadow: 0 -5px 0 #F7D37D;}
+        100%{text-shadow: 10px -10px 0 #B3274F;}
+    }
+
+    .section{width:100%; height:auto; display:flex; flex-flow:column wrap; align-items: center;}
+    .up{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:20px; text-align: center;}
+    .guitar{width:100px; height:100px;}
+
     .tour_list_box1{width:1200px; height:auto;  margin:0 auto; display:flex; text-align: center; flex-flow:wrap; margin-top:50px; }
     .list1{width:380px; height:200px; padding:5px;}
     .list1:hover{box-shadow: 0 0 0 2px #e5e5e5;}
@@ -22,7 +42,8 @@
     .btn.first a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#131313; font-weight: normal; font-size:15px; line-height:50px;}
     .btn.back a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#e5e5e5; font-weight: normal; font-size:15px; line-height:50px;}
     
-    /* 버튼 뒤집기 효과 */
+
+    /* 버튼 뒤집기 */
     .card .btn{width:120px; height:50px; margin:20px 15px 0 15px; border:0; cursor:pointer;}
     .card .btn{backface-visibility: hidden; transition:1s; display:inline-block}
     .card .btn.first{ position:absolute; background-color:#bcbcbc;}
@@ -31,7 +52,7 @@
     .card:hover .btn.back{transform: rotateY(0deg);}
     
 
-    .past{width:500px; height:100px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 95px; text-align: center;}
+    .past{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:20px; text-align: center;}
     .tour_list_box2{width:1200px; height:auto;  margin:0 auto; display:flex; flex-flow:wrap; text-align: center; margin-top:50px;}
     .list2{width:380px; height:200px; padding:5px;}
     .list2 h1{font-family: 'Pretendard-Regular'; font-size:20px; font-weight: normal; color:#e5e5e5;}
@@ -42,17 +63,24 @@
     .iwt21, .iwt22, .iwt23, .iwt24, .iwt25, .iwt26, .iwt27, .iwt28, .iwt29, .iwt30,
     .iwt31, .iwt32, .iwt33, .iwt34, .iwt35, .iwt36, .iwt37, .iwt38{font-family: 'Pretendard-Regular'; color:#131313; font-size:20px; display:none; text-decoration: underline; cursor: pointer; margin-top:20px; }
 
+
+
     .news{width:100%; height:auto; margin:0 auto; background-repeat: no-repeat; background-size:cover; display:flex; flex-flow:column wrap; align-items: center; }
-    .news h1{color:#e5e5e5; width:300px; height:100px; text-align:center; margin:0 auto; line-height:100px;}
+    .news h1{width:500px; height:150px; font-family: 'Pretendard-Regular'; font-size:38px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px;}
+    .news h2{width:130px; height:150px; font-family: 'Pretendard-Regular'; font-size:20px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px; text-transform: uppercase; cursor: pointer;}
+    .news h2:hover{text-decoration: underline;}
     .newsbox{width:1200px; height:auto; display:flex; flex-flow:row wrap;}
-    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6{width:400px; height:400px; background-size:cover; background-position: center; }
-    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6{width:400px; height:400px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; opacity:0; display:flex; align-items: center; justify-content:center; transition:0.5s;}
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9{width:390px; height:390px; background-size:cover; background-position: center; margin:5px;}
+    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6, .newstext7, .newstext8, .newstext9{width:390px; height:390px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; opacity:0; display:flex; align-items: center; justify-content:center; transition:0.3s;}
     .newstext1 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext2 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext3 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext4 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext5 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext6 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext7 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext8 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext9 img{width:25px; height:25px; filter: invert(0.8);}
 
     .newstext1:hover{background:rgba(19,19,19, 0.7)}
     .newstext2:hover{background:rgba(19,19,19, 0.7)}
@@ -60,4 +88,7 @@
     .newstext4:hover{background:rgba(19,19,19, 0.7)}
     .newstext5:hover{background:rgba(19,19,19, 0.7)}
     .newstext6:hover{background:rgba(19,19,19, 0.7)}
+    .newstext7:hover{background:rgba(19,19,19, 0.7)}
+    .newstext8:hover{background:rgba(19,19,19, 0.7)}
+    .newstext9:hover{background:rgba(19,19,19, 0.7)}
     
