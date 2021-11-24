@@ -1,9 +1,208 @@
 
+@keyframes text{
+    0%{text-shadow: 10px 0 0 #f183b2;}
+    10%{text-shadow: -10px -10px 0 darkred;}
+    20%{text-shadow: 10px 0 0 #ABD16A;}
+    30%{text-shadow: 10px 0 0 #F7D37D;}
+    40%{text-shadow: 10px 10px 0 #B3274F;}
+    50%{text-shadow: -15px -10px 0 #C9C81E;}
+    60%{text-shadow: 0 10px 0 #f183b2;}
+    70%{text-shadow: 10px 0 0 darkred;}
+    80%{text-shadow: -10px -15px 0 #ABD16A;}
+    90%{text-shadow: 0 -5px 0 #F7D37D;}
+    100%{text-shadow: 10px -10px 0 #B3274F;}
+}
 
-    .nv1 ul li a:after{display:block; content:''; border-bottom:2px solid #f183b2; transform:scaleX(0); transition:transform 250ms ease-in-out;}
-    .nv1 ul li a:hover:after{ transform: scaleX(1); transform-origin: 0% 50%;}
+@media(max-width:599px){
+    #slider{width:100%; height:50%; display:flex;}
 
-    #slider{width:100%; height:800px; display:flex;}
+    .tour_image_box{width:100%; height:80vh; display:flex; box-sizing: border-box;  padding:4% 2%;  position:relative;}
+    .tour1{flex:1; overflow: hidden; transition:0.5s; margin:0 2%;}
+    .tour1 > img{width:200%;  height: calc(100% - 10vh);  object-fit: cover; opacity:0.5;}
+    .tour1:hover { flex: 1 1 70%; }
+    .tour1:hover > img {width: 100%; height: 90%; opacity:1;}
+
+    .tour_text_box{position:absolute; color:#e5e5e5; top:23%; left:2%;}
+    .tour_text_box h1{text-transform: uppercase; font-size:14vw; color:#e5e5e5; animation:text 1s infinite; text-align: center;}
+
+    
+    .section{width:100%; height:auto; display:flex; flex-flow:column wrap; align-items: center;}
+    .up{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:20px; text-align: center;}
+    .guitar{width:100px; height:100px;}
+
+
+    /* 진행 및 예정 공연 */
+    .tour_list_box1{width:100%; height:1100px; margin:0 auto; display:flex; text-align: center; flex-flow:wrap; margin-top:50px; justify-content: center;}
+    .list1{width:45%; height:200px; padding:5px; margin-top:50px;  }
+    .list1:hover{box-shadow: 0 0 0 2px #e5e5e5;}
+    .list1 h1{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
+    .list1 h2{font-family: 'Pretendard-Regular'; font-size:25px; color:#bcbcbc;}
+    .list1 h3{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
+
+    
+    /* 티켓 모어 버튼 */
+    .card .btn{width:120px; height:50px; margin:20px 15px 0 15px; border:0; cursor:pointer;}
+    .card .btn{backface-visibility: hidden; transition:1s; display:inline-block}
+    .card .btn.first{ position:absolute; background-color:#bcbcbc;}
+    .card:hover .btn.first{transform: rotateY(180deg);}
+    .card .btn.back{transition:1s; transform: rotateY(-180deg); background-color:#f183b2;}
+    .card:hover .btn.back{transform: rotateY(0deg);}
+    .btn.first a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#131313; font-weight: normal; font-size:15px; line-height:50px;}
+    .btn.back a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#e5e5e5; font-weight: normal; font-size:15px; line-height:50px;}
+    
+    /* 포스터 정렬 */
+    .tour_poster{width:100%; height:auto; display:flex; position: relative;  overflow:hidden;}
+    .tour_poster_list{display:flex;}
+    .tour_poster h1{font-family: 'Pretendard-Regular'; color:#e5e5e5; font-size:13px; font-weight:normal;}
+    .tour_poster h2{font-family: 'Pretendard-Regular'; color:#e5e5e5; font-size:16px;}
+    .p_text1:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text2:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text3:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text4:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text5:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text6:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text7:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text8:hover{background:rgba(19, 19, 19, 0.7);}
+    .poster1, .poster2, .poster3, .poster4, .poster5, .poster6, .poster7, .poster8{width:200px; height:200px; background-size: cover;}
+    .p_text1, .p_text2, .p_text3, .p_text4, .p_text5, .p_text6, .p_text7, .p_text8{width:200px; height:200px; text-align: center; display: table-cell; vertical-align: middle; opacity:0; transition:0.3s;}
+    .prev, .next{width:35px; height:35px; font-family: 'Pretendard-Regular'; color:#131313; font-size:17px; background:#e5e5e5; padding:3px; margin:5px; text-align: center; line-height:35px; cursor: pointer; font-weight:bold;}
+    .prev{left:0; position:absolute; top:40%;}
+    .prev:active{background-color:#f183b2; color:#e5e5e5;}
+    .next{right:0; position: absolute; top:40%;}
+    .next:active{background-color:#f183b2; color:#e5e5e5;}
+
+
+    /* 지난 공연 */
+    .past{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:50px; text-align: center;}
+    .tour_list_box2{width:100%; height:auto; margin:0 auto; display:flex; flex-flow:wrap; text-align: center; margin-top:50px; justify-content: center;}
+    .list2{width:45%; height:200px; padding:5px;}
+    .list2 h1{font-family: 'Pretendard-Regular'; font-size:20px; font-weight: normal; color:#e5e5e5;}
+    .list2 h2{font-family: 'Pretendard-Regular'; font-size:28px; color:#cccccc;}
+    .list2 h3{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
+    .list2:hover{ filter:opacity(0.5) drop-shadow(0 0 0 #f183b2);}
+    .iwt1, .iwt2, .iwt3, .iwt4, .iwt5, .iwt6, .iwt7, .iwt8, .iwt9, .iwt10, .iwt11, .iwt12{font-family: 'Pretendard-Regular'; font-size:20px; display:none; text-decoration: underline; cursor: pointer; margin-top:20px; }
+    .iwt1 a, .iwt2 a, .iwt3 a, .iwt4 a, .iwt5 a, .iwt6 a, .iwt7 a, .iwt8 a, .iwt9 a, .lwt10 a, .iwt11 a, .iwt12 a{color:#131313;}
+
+
+    /* 공연 사진 */
+    .news{width:100%; height:auto; margin:0 auto; background-repeat: no-repeat; background-size:cover; display:flex; flex-flow:column wrap; align-items: center; margin-top:100px; }
+    .news h1{width:500px; height:150px; font-family: 'Pretendard-Regular'; font-size:38px; color:#a19f9f; text-align:center; margin:0 auto; line-height:150px;}
+    .news h2{width:130px; height:150px; font-family: 'Pretendard-Regular'; font-size:20px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px; text-transform: uppercase; cursor: pointer;}
+    .news h2:hover{text-decoration: underline;}
+    .newsbox{width:100%; height:auto; display:flex; flex-flow:row wrap; justify-content: center;}
+    .newsbox a{text-decoration: none;}
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9{width:390px; height:390px; background-size:cover; background-position: center; margin:5px; text-align: center;}
+    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6, .newstext7, .newstext8, .newstext9{width:390px; height:390px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; transition:0.3s; display:table-cell; vertical-align: middle; opacity:0; cursor:pointer;}
+    .newstext1 img, .newstext2 img, .newstext3 img, .newstext4 img, .newstext5 img, .newstext6 img, .newstext7 img, .newstext8 img, .newstext9 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext1:hover{background:rgba(19,19,19, 0.7)}
+    .newstext2:hover{background:rgba(19,19,19, 0.7)}
+    .newstext3:hover{background:rgba(19,19,19, 0.7)}
+    .newstext4:hover{background:rgba(19,19,19, 0.7)}
+    .newstext5:hover{background:rgba(19,19,19, 0.7)}
+    .newstext6:hover{background:rgba(19,19,19, 0.7)}
+    .newstext7:hover{background:rgba(19,19,19, 0.7)}
+    .newstext8:hover{background:rgba(19,19,19, 0.7)}
+    .newstext9:hover{background:rgba(19,19,19, 0.7)}
+}
+
+
+
+@media(min-width:600px){
+    #slider{width:100%; height:50%; display:flex;}
+
+    .tour_image_box{width:100%; height:80vh; display:flex; box-sizing: border-box;  padding:4% 2%;  position:relative;}
+    .tour1{flex:1; overflow: hidden; transition:0.5s; margin:0 2%;}
+    .tour1 > img{width:200%;  height: calc(100% - 10vh);  object-fit: cover; opacity:0.5;}
+    .tour1:hover { flex: 1 1 50%; }
+    .tour1:hover > img {width: 100%; height: 90%; opacity:1;}
+
+    .tour_text_box{position:absolute; color:#e5e5e5; top:28%; left:2%;}
+    .tour_text_box h1{text-transform: uppercase; font-size:9vw; color:#e5e5e5; animation:text 1s infinite;}
+
+    
+    .section{width:100%; height:auto; display:flex; flex-flow:column wrap; align-items: center;}
+    .up{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:20px; text-align: center;}
+    .guitar{width:100px; height:100px;}
+
+
+    /* 진행 및 예정 공연 */
+    .tour_list_box1{width:100%; height:1100px; margin:0 auto; display:flex; text-align: center; flex-flow:wrap; margin-top:50px; justify-content: center;}
+    .list1{width:45%; height:200px; padding:5px; margin-top:50px;  }
+    .list1:hover{box-shadow: 0 0 0 2px #e5e5e5;}
+    .list1 h1{font-family: 'Pretendard-Regular'; font-size:20px; font-weight: normal; color:#e5e5e5;}
+    .list1 h2{font-family: 'Pretendard-Regular'; font-size:28px; color:#bcbcbc;}
+    .list1 h3{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
+
+    
+    /* 티켓 모어 버튼 */
+    .card .btn{width:120px; height:50px; margin:20px 15px 0 15px; border:0; cursor:pointer;}
+    .card .btn{backface-visibility: hidden; transition:1s; display:inline-block}
+    .card .btn.first{ position:absolute; background-color:#bcbcbc;}
+    .card:hover .btn.first{transform: rotateY(180deg);}
+    .card .btn.back{transition:1s; transform: rotateY(-180deg); background-color:#f183b2;}
+    .card:hover .btn.back{transform: rotateY(0deg);}
+    .btn.first a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#131313; font-weight: normal; font-size:15px; line-height:50px;}
+    .btn.back a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#e5e5e5; font-weight: normal; font-size:15px; line-height:50px;}
+    
+    /* 포스터 정렬 */
+    .tour_poster{width:100%; height:auto; display:flex; position: relative;  overflow:hidden;}
+    .tour_poster_list{display:flex;}
+    .tour_poster h1{font-family: 'Pretendard-Regular'; color:#e5e5e5; font-size:13px; font-weight:normal;}
+    .tour_poster h2{font-family: 'Pretendard-Regular'; color:#e5e5e5; font-size:16px;}
+    .p_text1:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text2:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text3:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text4:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text5:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text6:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text7:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text8:hover{background:rgba(19, 19, 19, 0.7);}
+    .poster1, .poster2, .poster3, .poster4, .poster5, .poster6, .poster7, .poster8{width:200px; height:200px; background-size: cover;}
+    .p_text1, .p_text2, .p_text3, .p_text4, .p_text5, .p_text6, .p_text7, .p_text8{width:200px; height:200px; text-align: center; display: table-cell; vertical-align: middle; opacity:0; transition:0.3s;}
+    .prev, .next{width:35px; height:35px; font-family: 'Pretendard-Regular'; color:#131313; font-size:17px; background:#e5e5e5; padding:3px; margin:5px; text-align: center; line-height:35px; cursor: pointer; font-weight:bold;}
+    .prev{left:0; position:absolute; top:40%;}
+    .prev:active{background-color:#f183b2; color:#e5e5e5;}
+    .next{right:0; position: absolute; top:40%;}
+    .next:active{background-color:#f183b2; color:#e5e5e5;}
+
+
+    /* 지난 공연 */
+    .past{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:50px; text-align: center;}
+    .tour_list_box2{width:100%; height:auto; margin:0 auto; display:flex; flex-flow:wrap; text-align: center; margin-top:50px; justify-content: center;}
+    .list2{width:45%; height:200px; padding:5px;}
+    .list2 h1{font-family: 'Pretendard-Regular'; font-size:20px; font-weight: normal; color:#e5e5e5;}
+    .list2 h2{font-family: 'Pretendard-Regular'; font-size:28px; color:#cccccc;}
+    .list2 h3{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
+    .list2:hover{ filter:opacity(0.5) drop-shadow(0 0 0 #f183b2);}
+    .iwt1, .iwt2, .iwt3, .iwt4, .iwt5, .iwt6, .iwt7, .iwt8, .iwt9, .iwt10, .iwt11, .iwt12{font-family: 'Pretendard-Regular'; font-size:20px; display:none; text-decoration: underline; cursor: pointer; margin-top:20px; }
+    .iwt1 a, .iwt2 a, .iwt3 a, .iwt4 a, .iwt5 a, .iwt6 a, .iwt7 a, .iwt8 a, .iwt9 a, .lwt10 a, .iwt11 a, .iwt12 a{color:#131313;}
+
+
+    /* 공연 사진 */
+    .news{width:100%; height:auto; margin:0 auto; background-repeat: no-repeat; background-size:cover; display:flex; flex-flow:column wrap; align-items: center; margin-top:100px; }
+    .news h1{width:500px; height:150px; font-family: 'Pretendard-Regular'; font-size:38px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px;}
+    .news h2{width:130px; height:150px; font-family: 'Pretendard-Regular'; font-size:20px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px; text-transform: uppercase; cursor: pointer;}
+    .news h2:hover{text-decoration: underline;}
+    .newsbox{width:100%; height:auto; display:flex; flex-flow:row wrap; justify-content: center;}
+    .newsbox a{text-decoration: none;}
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9{width:390px; height:390px; background-size:cover; background-position: center; margin:5px; text-align: center;}
+    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6, .newstext7, .newstext8, .newstext9{width:390px; height:390px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; transition:0.3s; display:table-cell; vertical-align: middle; opacity:0; cursor:pointer;}
+    .newstext1 img, .newstext2 img, .newstext3 img, .newstext4 img, .newstext5 img, .newstext6 img, .newstext7 img, .newstext8 img, .newstext9 img{width:25px; height:25px; filter: invert(0.8);}
+    .newstext1:hover{background:rgba(19,19,19, 0.7)}
+    .newstext2:hover{background:rgba(19,19,19, 0.7)}
+    .newstext3:hover{background:rgba(19,19,19, 0.7)}
+    .newstext4:hover{background:rgba(19,19,19, 0.7)}
+    .newstext5:hover{background:rgba(19,19,19, 0.7)}
+    .newstext6:hover{background:rgba(19,19,19, 0.7)}
+    .newstext7:hover{background:rgba(19,19,19, 0.7)}
+    .newstext8:hover{background:rgba(19,19,19, 0.7)}
+    .newstext9:hover{background:rgba(19,19,19, 0.7)}
+}
+
+
+
+@media(min-width:1000px){
+    #slider{width:100%; height:900px; display:flex;}
 
     .tour_image_box{width:100%; height:100vh; display:flex; box-sizing: border-box;  padding:4% 2%;  position:relative;}
     .tour1{flex:1; overflow: hidden; transition:0.5s; margin:0 2%;}
@@ -14,74 +213,75 @@
     .tour_text_box{position:absolute; color:#e5e5e5; top:28%; left:2%;}
     .tour_text_box h1{text-transform: uppercase; font-size:9.4vw; color:#e5e5e5; animation:text 1s infinite;}
 
-    @keyframes text{
-        0%{text-shadow: 10px 0 0 #f183b2;}
-        10%{text-shadow: -10px -10px 0 darkred;}
-        20%{text-shadow: 10px 0 0 #ABD16A;}
-        30%{text-shadow: 10px 0 0 #F7D37D;}
-        40%{text-shadow: 10px 10px 0 #B3274F;}
-        50%{text-shadow: -15px -10px 0 #C9C81E;}
-        60%{text-shadow: 0 10px 0 #f183b2;}
-        70%{text-shadow: 10px 0 0 darkred;}
-        80%{text-shadow: -10px -15px 0 #ABD16A;}
-        90%{text-shadow: 0 -5px 0 #F7D37D;}
-        100%{text-shadow: 10px -10px 0 #B3274F;}
-    }
-
+    
     .section{width:100%; height:auto; display:flex; flex-flow:column wrap; align-items: center;}
     .up{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:20px; text-align: center;}
     .guitar{width:100px; height:100px;}
 
-    .tour_list_box1{width:1200px; height:auto;  margin:0 auto; display:flex; text-align: center; flex-flow:wrap; margin-top:50px; }
-    .list1{width:380px; height:200px; padding:5px;}
+
+    /* 진행 및 예정 공연 */
+    .tour_list_box1{width:1200px; height:850px;  margin:0 auto; display:flex; text-align: center; flex-flow:wrap; margin-top:50px; }
+    .list1{width:380px; height:200px; padding:5px; }
     .list1:hover{box-shadow: 0 0 0 2px #e5e5e5;}
     .list1 h1{font-family: 'Pretendard-Regular'; font-size:20px; font-weight: normal; color:#e5e5e5;}
     .list1 h2{font-family: 'Pretendard-Regular'; font-size:28px; color:#bcbcbc;}
     .list1 h3{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
 
-    .btn.first a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#131313; font-weight: normal; font-size:15px; line-height:50px;}
-    .btn.back a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#e5e5e5; font-weight: normal; font-size:15px; line-height:50px;}
     
-
-    /* 버튼 뒤집기 */
+    /* 티켓 모어 버튼 */
     .card .btn{width:120px; height:50px; margin:20px 15px 0 15px; border:0; cursor:pointer;}
     .card .btn{backface-visibility: hidden; transition:1s; display:inline-block}
     .card .btn.first{ position:absolute; background-color:#bcbcbc;}
     .card:hover .btn.first{transform: rotateY(180deg);}
     .card .btn.back{transition:1s; transform: rotateY(-180deg); background-color:#f183b2;}
     .card:hover .btn.back{transform: rotateY(0deg);}
+    .btn.first a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#131313; font-weight: normal; font-size:15px; line-height:50px;}
+    .btn.back a{font-family: 'Pretendard-Regular'; text-decoration: none; color:#e5e5e5; font-weight: normal; font-size:15px; line-height:50px;}
     
+    /* 포스터 정렬 */
+    .tour_poster{width:100%; height:auto; display:flex; position: relative;  overflow:hidden;}
+    .tour_poster_list{display:flex;}
+    .tour_poster h1{font-family: 'Pretendard-Regular'; color:#e5e5e5; font-size:15px; font-weight:normal;}
+    .tour_poster h2{font-family: 'Pretendard-Regular'; color:#e5e5e5; font-size:20px;}
+    .p_text1:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text2:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text3:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text4:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text5:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text6:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text7:hover{background:rgba(19, 19, 19, 0.7);}
+    .p_text8:hover{background:rgba(19, 19, 19, 0.7);}
+    .poster1, .poster2, .poster3, .poster4, .poster5, .poster6, .poster7, .poster8{width:300px; height:300px;}
+    .p_text1, .p_text2, .p_text3, .p_text4, .p_text5, .p_text6, .p_text7, .p_text8{width:300px; height:300px; text-align: center; display: table-cell; vertical-align: middle; opacity:0; transition:0.3s;}
+    .prev, .next{width:35px; height:35px; font-family: 'Pretendard-Regular'; color:#131313; font-size:20px; background:#e5e5e5; padding:3px; margin:5px; text-align: center; line-height:35px; cursor: pointer; font-weight:bold;}
+    .prev{left:0; position:absolute; top:40%;}
+    .prev:active{background-color:#f183b2; color:#e5e5e5;}
+    .next{right:0; position: absolute; top:40%;}
+    .next:active{background-color:#f183b2; color:#e5e5e5;}
 
-    .past{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:20px; text-align: center;}
+
+    /* 지난 공연 */
+    .past{width:500px; height:150px; color:#f183b2; font-size:38px; text-transform: uppercase; margin:0 auto; font-weight: bold; line-height: 150px; margin-top:50px; text-align: center;}
     .tour_list_box2{width:1200px; height:auto;  margin:0 auto; display:flex; flex-flow:wrap; text-align: center; margin-top:50px;}
     .list2{width:380px; height:200px; padding:5px;}
     .list2 h1{font-family: 'Pretendard-Regular'; font-size:20px; font-weight: normal; color:#e5e5e5;}
     .list2 h2{font-family: 'Pretendard-Regular'; font-size:28px; color:#cccccc;}
     .list2 h3{font-family: 'Pretendard-Regular'; font-size:15px; font-weight: normal; color:#e5e5e5;}
     .list2:hover{ filter:opacity(0.5) drop-shadow(0 0 0 #f183b2);}
-    .iwt1, .iwt2, .iwt3, .iwt4, .iwt5, .iwt6, .iwt7, .iwt8, .iwt9, .iwt10, .iwt11, .iwt12, .iwt13, .iwt14, .iwt15, .iwt16, .iwt17, .iwt18, .iwt19, .iwt20,
-    .iwt21, .iwt22, .iwt23, .iwt24, .iwt25, .iwt26, .iwt27, .iwt28, .iwt29, .iwt30,
-    .iwt31, .iwt32, .iwt33, .iwt34, .iwt35, .iwt36, .iwt37, .iwt38{font-family: 'Pretendard-Regular'; color:#131313; font-size:20px; display:none; text-decoration: underline; cursor: pointer; margin-top:20px; }
+    .iwt1, .iwt2, .iwt3, .iwt4, .iwt5, .iwt6, .iwt7, .iwt8, .iwt9, .iwt10, .iwt11, .iwt12{font-family: 'Pretendard-Regular'; font-size:20px; display:none; text-decoration: underline; cursor: pointer; margin-top:20px; }
+    .iwt1 a, .iwt2 a, .iwt3 a, .iwt4 a, .iwt5 a, .iwt6 a, .iwt7 a, .iwt8 a, .iwt9 a, .lwt10 a, .iwt11 a, .iwt12 a{color:#131313;}
 
 
-
-    .news{width:100%; height:auto; margin:0 auto; background-repeat: no-repeat; background-size:cover; display:flex; flex-flow:column wrap; align-items: center; }
+    /* 공연 사진 */
+    .news{width:100%; height:auto; margin:0 auto; background-repeat: no-repeat; background-size:cover; display:flex; flex-flow:column wrap; align-items: center; margin-top:100px; }
     .news h1{width:500px; height:150px; font-family: 'Pretendard-Regular'; font-size:38px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px;}
-    .news h2{width:130px; height:150px; font-family: 'Pretendard-Regular'; font-size:20px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px; text-transform: uppercase; cursor: pointer;}
+    .news h2 a{width:130px; height:150px; font-family: 'Pretendard-Regular'; font-size:20px; color:#e5e5e5; text-align:center; margin:0 auto; line-height:150px; text-transform: uppercase; cursor: pointer;}
     .news h2:hover{text-decoration: underline;}
     .newsbox{width:1200px; height:auto; display:flex; flex-flow:row wrap;}
-    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9{width:390px; height:390px; background-size:cover; background-position: center; margin:5px;}
-    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6, .newstext7, .newstext8, .newstext9{width:390px; height:390px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; opacity:0; display:flex; align-items: center; justify-content:center; transition:0.3s;}
-    .newstext1 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext2 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext3 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext4 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext5 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext6 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext7 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext8 img{width:25px; height:25px; filter: invert(0.8);}
-    .newstext9 img{width:25px; height:25px; filter: invert(0.8);}
-
+    .newsbox a{text-decoration: none;}
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9{width:390px; height:390px; background-size:cover; background-position: center; margin:5px; text-align: center;}
+    .newstext1, .newstext2, .newstext3, .newstext4, .newstext5, .newstext6, .newstext7, .newstext8, .newstext9{width:390px; height:390px; color:#e5e5e5; font-family: 'Pretendard-Regular'; font-weight: normal; font-size:17px; transition:0.3s; display:table-cell; vertical-align: middle; opacity:0; cursor:pointer;}
+    .newstext1 img, .newstext2 img, .newstext3 img, .newstext4 img, .newstext5 img, .newstext6 img, .newstext7 img, .newstext8 img, .newstext9 img{width:25px; height:25px; filter: invert(0.8);}
     .newstext1:hover{background:rgba(19,19,19, 0.7)}
     .newstext2:hover{background:rgba(19,19,19, 0.7)}
     .newstext3:hover{background:rgba(19,19,19, 0.7)}
@@ -92,3 +292,5 @@
     .newstext8:hover{background:rgba(19,19,19, 0.7)}
     .newstext9:hover{background:rgba(19,19,19, 0.7)}
     
+}
+   
