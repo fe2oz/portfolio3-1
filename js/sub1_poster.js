@@ -2,13 +2,16 @@
 
 $(function(){
     $('.prev').click(function(){
-        $('.tour_poster_list li:last').prependTo('.tour_poster_list');
-        $('.tour_poster_list').css('margin-left', -0);
-        $('.tour_poster_list').stop().alimate({marginLeft:0}, 500);
+        var chars = $(".tour_poster_list li").width();
+        $(".tour_poster_list").stop().animate({marginLeft:chars}, function(){
+            $('.tour_poster_list').css({marginLeft:0});
+            $('.tour_poster_list li:last').prependTo('.tour_poster_list');
+        })
     })
 
     $('.next').click(function(){
-        $('.tour_poster_list').stop().animate({marginLeft:-300}, 500, function(){
+        var chars = $(".tour_poster_list li").width();
+        $('.tour_poster_list').stop().animate({marginLeft:-chars}, function(){
             $('.tour_poster_list li:first').appendTo('.tour_poster_list');
             $('.tour_poster_list').css({marginLeft:0});
         })
